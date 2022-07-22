@@ -10,6 +10,7 @@ obj-$(CONFIG_REGULATOR_FIXED_VOLTAGE) += fixed.o
 obj-$(CONFIG_REGULATOR_QTI_FIXED_VOLTAGE) += qti-fixed-regulator.o
 obj-$(CONFIG_REGULATOR_VIRTUAL_CONSUMER) += virtual.o
 obj-$(CONFIG_REGULATOR_USERSPACE_CONSUMER) += userspace-consumer.o
+obj-$(CONFIG_REGULATOR_MULTI_INPUT) += multi-regulator.o
 obj-$(CONFIG_REGULATOR_PROXY_CONSUMER) += proxy-consumer.o
 
 obj-$(CONFIG_REGULATOR_88PG86X) += 88pg86x.o

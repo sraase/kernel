@@ -74,6 +74,14 @@ config REGULATOR_USERSPACE_CONSUMER
 
 	  If unsure, say no.
 
+config REGULATOR_MULTI_INPUT
+	tristate "Multi-input regulator support"
+	help
+	  This driver provides a regulator with multiple inputs,
+	  useful to control multiple voltages with a single consumer.
+
+	  If unsure, say no.
+
 config REGULATOR_PROXY_CONSUMER
 	tristate "Boot time regulator proxy consumer support"
 	help
