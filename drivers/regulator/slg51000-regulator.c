@@ -455,6 +455,7 @@ static int slg51000_i2c_probe(struct i2c_client *client)
 	if (cs_gpiod) {
 		dev_info(dev, "Found chip selector property\n");
 		chip->cs_gpiod = cs_gpiod;
+		usleep_range(10000, 10000);
 	}
 
 	i2c_set_clientdata(client, chip);
